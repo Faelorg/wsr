@@ -1,0 +1,35 @@
+﻿@model Hospital_MVC.Models.PacientDto
+
+
+@{
+}
+<form asp-action="AddPacient" style="display:grid">
+    <label asp-for="Surname">Фамилия</label>
+    <input asp-for="Surname" type="text"/>
+    <span asp-validation-for="Surname"></span>
+    <label asp-for="Firstname">Имя</label>
+    <input asp-for="Firstname" type="text"/>
+    <span asp-validation-for="Firstname"></span>
+    <label asp-for="Dadname">Отчество</label>
+    <input asp-for="Dadname" type="text"/>
+    <span asp-validation-for="Dadname"></span>
+    <label asp-for="Email">Email</label>
+    <input asp-for="Email" type="email"/>
+    <span asp-validation-for="Email"></span>
+    <label asp-for="Birthdate">Дата рождения</label>
+    <input asp-for="Birthdate" type="date"/>
+    <span asp-validation-for="Birthdate"></span>
+    <label asp-for="Passport">Пасспорт</label>
+    <input asp-for="Passport" type="number"/>
+    <span asp-validation-for="Passport"></span>
+    <label asp-for="Phone">Телефон</label>
+    <input asp-for="Phone" type="tel"/>
+    <span asp-validation-for="Phone"></span>
+    <label asp-for="NumberPolis">Номер полиса</label>
+    <input asp-for="NumberPolis" type="number"/>
+    <span asp-validation-for="NumberPolis"></span>
+    <label asp-for="DateendPolis">Дата окончания полиса</label>
+    <input asp-for="DateendPolis" type="date"/>
+    <span asp-validation-for="DateendPolis"></span>
+    <button type="submit">Зарегистрироваться</button>
+</form>
